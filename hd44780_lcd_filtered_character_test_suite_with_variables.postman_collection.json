@@ -23,7 +23,7 @@
                     "raw": "{\"value\": \"\\u0000 \\u0001\\n\\u0002 \\u0003\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -61,7 +61,7 @@
                     "raw": "{\"value\": \"\\u0004 \\u0005\\n\\u0006 \\u0007\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -99,7 +99,7 @@
                     "raw": "{\"value\": \"\\u0008 \\u0009\\n\\u000A \\u000B\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -137,7 +137,7 @@
                     "raw": "{\"value\": \"\\u000C \\u000D\\n\\u000E \\u000F\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -175,7 +175,7 @@
                     "raw": "{\"value\": \"\\u0010 \\u0011\\n\\u0012 \\u0013\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -213,7 +213,7 @@
                     "raw": "{\"value\": \"\\u0014 \\u0015\\n\\u0016 \\u0017\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -251,7 +251,7 @@
                     "raw": "{\"value\": \"\\u0018 \\u0019\\n\\u001A \\u001B\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -289,7 +289,7 @@
                     "raw": "{\"value\": \"\\u001C \\u001D\\n\\u001E \\u001F\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -327,7 +327,7 @@
                     "raw": "{\"value\": \"\\u0020 \\u0021\\n\\u0022 \\u0023\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -365,7 +365,7 @@
                     "raw": "{\"value\": \"\\u0024 \\u0025\\n\\u0026 \\u0027\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -403,7 +403,7 @@
                     "raw": "{\"value\": \"\\u0028 \\u0029\\n\\u002A \\u002B\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -441,7 +441,7 @@
                     "raw": "{\"value\": \"\\u002C \\u002D\\n\\u002E \\u002F\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -479,7 +479,7 @@
                     "raw": "{\"value\": \"\\u003A \\u003B\\n\\u003C \\u003D\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -517,7 +517,7 @@
                     "raw": "{\"value\": \"\\u003E \\u003F\\n\\u0040 \\u005B\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -555,7 +555,7 @@
                     "raw": "{\"value\": \"\\u005C \\u005D\\n\\u005E \\u005F\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -593,7 +593,7 @@
                     "raw": "{\"value\": \"\\u0060 \\u007B\\n\\u007C \\u007D\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -631,7 +631,7 @@
                     "raw": "{\"value\": \"\\u007E \\u007F\\n\\u0080 \\u0081\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -669,7 +669,7 @@
                     "raw": "{\"value\": \"\\u0082 \\u0083\\n\\u0084 \\u0085\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -707,7 +707,7 @@
                     "raw": "{\"value\": \"\\u0086 \\u0087\\n\\u0088 \\u0089\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -745,7 +745,7 @@
                     "raw": "{\"value\": \"\\u008A \\u008B\\n\\u008C \\u008D\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -783,7 +783,7 @@
                     "raw": "{\"value\": \"\\u008E \\u008F\\n\\u0090 \\u0091\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -821,7 +821,7 @@
                     "raw": "{\"value\": \"\\u0092 \\u0093\\n\\u0094 \\u0095\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -859,7 +859,7 @@
                     "raw": "{\"value\": \"\\u0096 \\u0097\\n\\u0098 \\u0099\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -897,7 +897,7 @@
                     "raw": "{\"value\": \"\\u009A \\u009B\\n\\u009C \\u009D\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -935,7 +935,7 @@
                     "raw": "{\"value\": \"\\u009E \\u009F\\n\\u00A0 \\u00A1\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -973,7 +973,7 @@
                     "raw": "{\"value\": \"\\u00A2 \\u00A3\\n\\u00A4 \\u00A5\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1011,7 +1011,7 @@
                     "raw": "{\"value\": \"\\u00A6 \\u00A7\\n\\u00A8 \\u00A9\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1049,7 +1049,7 @@
                     "raw": "{\"value\": \"\\u00AA \\u00AB\\n\\u00AC \\u00AD\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1087,7 +1087,7 @@
                     "raw": "{\"value\": \"\\u00AE \\u00AF\\n\\u00B0 \\u00B1\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1125,7 +1125,7 @@
                     "raw": "{\"value\": \"\\u00B2 \\u00B3\\n\\u00B4 \\u00B5\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1163,7 +1163,7 @@
                     "raw": "{\"value\": \"\\u00B6 \\u00B7\\n\\u00B8 \\u00B9\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1201,7 +1201,7 @@
                     "raw": "{\"value\": \"\\u00BA \\u00BB\\n\\u00BC \\u00BD\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1239,7 +1239,7 @@
                     "raw": "{\"value\": \"\\u00BE \\u00BF\\n\\u00C0 \\u00C1\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1277,7 +1277,7 @@
                     "raw": "{\"value\": \"\\u00C2 \\u00C3\\n\\u00C4 \\u00C5\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1315,7 +1315,7 @@
                     "raw": "{\"value\": \"\\u00C6 \\u00C7\\n\\u00C8 \\u00C9\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1353,7 +1353,7 @@
                     "raw": "{\"value\": \"\\u00CA \\u00CB\\n\\u00CC \\u00CD\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1391,7 +1391,7 @@
                     "raw": "{\"value\": \"\\u00CE \\u00CF\\n\\u00D0 \\u00D1\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1429,7 +1429,7 @@
                     "raw": "{\"value\": \"\\u00D2 \\u00D3\\n\\u00D4 \\u00D5\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1467,7 +1467,7 @@
                     "raw": "{\"value\": \"\\u00D6 \\u00D7\\n\\u00D8 \\u00D9\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1505,7 +1505,7 @@
                     "raw": "{\"value\": \"\\u00DA \\u00DB\\n\\u00DC \\u00DD\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1543,7 +1543,7 @@
                     "raw": "{\"value\": \"\\u00DE \\u00DF\\n\\u00E0 \\u00E1\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1581,7 +1581,7 @@
                     "raw": "{\"value\": \"\\u00E2 \\u00E3\\n\\u00E4 \\u00E5\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1619,7 +1619,7 @@
                     "raw": "{\"value\": \"\\u00E6 \\u00E7\\n\\u00E8 \\u00E9\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1657,7 +1657,7 @@
                     "raw": "{\"value\": \"\\u00EA \\u00EB\\n\\u00EC \\u00ED\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1695,7 +1695,7 @@
                     "raw": "{\"value\": \"\\u00EE \\u00EF\\n\\u00F0 \\u00F1\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1733,7 +1733,7 @@
                     "raw": "{\"value\": \"\\u00F2 \\u00F3\\n\\u00F4 \\u00F5\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1771,7 +1771,7 @@
                     "raw": "{\"value\": \"\\u00F6 \\u00F7\\n\\u00F8 \\u00F9\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1809,7 +1809,7 @@
                     "raw": "{\"value\": \"\\u00FA \\u00FB\\n\\u00FC \\u00FD\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
@@ -1847,7 +1847,7 @@
                     "raw": "{\"value\": \"\\u00FE \\u00FF\\n\\u0020 \\u0020\"}"
                 },
                 "url": {
-                    "raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/{{feed}}/data",
+                    "raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed}}/data",
                     "protocol": "https",
                     "host": [
                         "io",
