@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII Table with Font Selector and LCD Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .controls label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        select {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: white;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+        th {
+            background-color: #333;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .int-col {
+            width: 50px;
+            font-weight: bold;
+            color: #666;
+            font-family: Arial, sans-serif !important;
+        }
+        .char-col {
+            width: 80px;
+            color: #000;
+        }
+        .lcd-col {
+            width: 80px;
+            font-family: monospace;
+            background-color: #e8f4f8;
+            color: #0066cc;
+        }
+        .control-char {
+            color: #888;
+            font-style: italic;
+        }
+        .font-monospace {
+            font-family: 'Courier New', Consolas, monospace;
+        }
+        .font-arial {
+            font-family: Arial, sans-serif;
+        }
+        .font-times {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .font-segoe {
+            font-family: 'Segoe UI Symbol', 'Segoe UI', sans-serif;
+        }
+        .font-noto {
+            font-family: 'Noto Sans Symbols', 'Noto Sans', sans-serif;
+        }
+        .font-symbola {
+            font-family: Symbola, 'Segoe UI Symbol', sans-serif;
+        }
+        .font-lucida {
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+        }
+        .font-dejavu {
+            font-family: 'DejaVu Sans', sans-serif;
+        }
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff9c4;
+            border-left: 4px solid #fbc02d;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ASCII Character Table 0-255 with Font Selection and LCD Display</h1>
+        
+        <div class="controls">
+            <label for="fontSelector">Select Font:</label>
+            <select id="fontSelector" onchange="changeFont()">
+                <option value="font-monospace">Monospace (Courier New)</option>
+                <option value="font-arial">Arial</option>
+                <option value="font-times">Times New Roman</option>
+                <option value="font-segoe">Segoe UI Symbol</option>
+                <option value="font-noto">Noto Sans Symbols</option>
+                <option value="font-symbola">Symbola</option>
+                <option value="font-lucida">Lucida Sans Unicode</option>
+                <option value="font-dejavu">DejaVu Sans</option>
+            </select>
+        </div>
+        
+        <table id="asciiTable">
+            <thead>
+                <tr>
+                    <th>Int</th>
+                    <th>Char</th>
+                    <th>LCD</th>
+                    <th>Int</th>
+                    <th>Char</th>
+                    <th>LCD</th>
+                    <th>Int</th>
+                    <th>Char</th>
+                    <th>LCD</th>
+                    <th>Int</th>
+                    <th>Char</th>
+                    <th>LCD</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        
+        <div class="note">
+            <strong>Note:</strong> The LCD column shows what would be displayed on a 16x4 Character LCD using codepage 426 (CP437/DOS Latin US). 
+            Characters 0-7 and 14-31 often display custom characters or symbols on LCDs. Characters 128-255 show the extended ASCII characters 
+            as they would appear on such displays.
+        </div>
+    </div>
+
+    <script>
+        // CP437 (codepage 426) character mapping for LCD displays
+        // For characters that don't map directly, we'll show the LCD equivalent
+        const cp437Map = {
+            0: '\\0',    // Null
+            1: '☺',      // Smiley face
+            2: '☻',      // Inverted smiley
+            3: '♥',      // Heart
+            4: '♦',      // Diamond
+            5: '♣',      // Club
+            6: '♠',      // Spade
+            7: '•',      // Bullet
+            8: '◘',      // Inverse bullet
+            9: '○',      // Circle
+            10: '◙',     // Inverse circle
+            11: '♂',     // Male sign
+            12: '♀',     // Female sign
+            13: '♪',     // Musical note
+            14: '♫',     // Musical notes
+            15: '☼',     // Sun
+            16: '►',     // Right triangle
+            17: '◄',     // Left triangle
+            18: '↕',     // Up/down arrow
+            19: '‼',     // Double exclamation
+            20: '¶',     // Pilcrow
+            21: '§',     // Section sign
+            22: '▬',     // Rectangle
+            23: '↨',     // Up/down arrow with base
+            24: '↑',     // Up arrow
+            25: '↓',     // Down arrow
+            26: '→',     // Right arrow
+            27: '←',     // Left arrow
+            28: '∟',     // Right angle
+            29: '↔',     // Left/right arrow
+            30: '▲',     // Up triangle
+            31: '▼',     // Down triangle
+            127: '⌂',    // House
+            128: 'Ç',    // C cedilla
+            129: 'ü',    // u umlaut
+            130: 'é',    // e acute
+            131: 'â',    // a circumflex
+            132: 'ä',    // a umlaut
+            133: 'à',    // a grave
+            134: 'å',    // a ring
+            135: 'ç',    // c cedilla
+            136: 'ê',    // e circumflex
+            137: 'ë',    // e umlaut
+            138: 'è',    // e grave
+            139: 'ï',    // i umlaut
+            140: 'î',    // i circumflex
+            141: 'ì',    // i grave
+            142: 'Ä',    // A umlaut
+            143: 'Å',    // A ring
+            144: 'É',    // E acute
+            145: 'æ',    // ae ligature
+            146: 'Æ',    // AE ligature
+            147: 'ô',    // o circumflex
+            148: 'ö',    // o umlaut
+            149: 'ò',    // o grave
+            150: 'û',    // u circumflex
+            151: 'ù',    // u grave
+            152: 'ÿ',    // y umlaut
+            153: 'Ö',    // O umlaut
+            154: 'Ü',    // U umlaut
+            155: '¢',    // Cent sign
+            156: '£',    // Pound sign
+            157: '¥',    // Yen sign
+            158: '₧',    // Peseta sign
+            159: 'ƒ',    // Florin sign
+            160: 'á',    // a acute
+            161: 'í',    // i acute
+            162: 'ó',    // o acute
+            163: 'ú',    // u acute
+            164: 'ñ',    // n tilde
+            165: 'Ñ',    // N tilde
+            166: 'ª',    // Feminine ordinal
+            167: 'º',    // Masculine ordinal
+            168: '¿',    // Inverted question
+            169: '⌐',    // Reversed not sign
+            170: '¬',    // Not sign
+            171: '½',    // One half
+            172: '¼',    // One quarter
+            173: '¡',    // Inverted exclamation
+            174: '«',    // Left guillemet
+            175: '»',    // Right guillemet
+            176: '░',    // Light shade
+            177: '▒',    // Medium shade
+            178: '▓',    // Dark shade
+            179: '│',    // Box vertical
+            180: '┤',    // Box vertical left
+            181: '╡',    // Box vertical double left
+            182: '╢',    // Box double vertical left
+            183: '╖',    // Box double down left
+            184: '╕',    // Box down double left
+            185: '╣',    // Box double vertical
+            186: '║',    // Box double vertical
+            187: '╗',    // Box double down left
+            188: '╝',    // Box double up left
+            189: '╜',    // Box up double left
+            190: '╛',    // Box up single left double
+            191: '┐',    // Box down left
+            192: '└',    // Box up right
+            193: '┴',    // Box up horizontal
+            194: '┬',    // Box down horizontal
+            195: '├',    // Box vertical right
+            196: '─',    // Box horizontal
+            197: '┼',    // Box cross
+            198: '╞',    // Box vertical double right
+            199: '╟',    // Box double vertical right
+            200: '╚',    // Box double up right
+            201: '╔',    // Box double down right
+            202: '╩',    // Box double up horizontal
+            203: '╦',    // Box double down horizontal
+            204: '╠',    // Box double vertical right
+            205: '═',    // Box double horizontal
+            206: '╬',    // Box double cross
+            207: '╧',    // Box up single horizontal double
+            208: '╨',    // Box up double horizontal single
+            209: '╤',    // Box down single horizontal double
+            210: '╥',    // Box down double horizontal single
+            211: '╙',    // Box up double right single
+            212: '╘',    // Box up single right double
+            213: '╒',    // Box down single right double
+            214: '╓',    // Box down double right single
+            215: '╫',    // Box vertical single horizontal double
+            216: '╪',    // Box vertical double horizontal single
+            217: '┘',    // Box up left
+            218: '┌',    // Box down right
+            219: '█',    // Full block
+            220: '▄',    // Lower half block
+            221: '▌',    // Left half block
+            222: '▐',    // Right half block
+            223: '▀',    // Upper half block
+            224: 'α',    // Greek alpha
+            225: 'ß',    // German eszett
+            226: 'Γ',    // Greek Gamma
+            227: 'π',    // Greek pi
+            228: 'Σ',    // Greek Sigma
+            229: 'σ',    // Greek sigma
+            230: 'µ',    // Micro sign
+            231: 'τ',    // Greek tau
+            232: 'Φ',    // Greek Phi
+            233: 'Θ',    // Greek Theta
+            234: 'Ω',    // Greek Omega
+            235: 'δ',    // Greek delta
+            236: '∞',    // Infinity
+            237: 'φ',    // Greek phi
+            238: 'ε',    // Greek epsilon
+            239: '∩',    // Intersection
+            240: '≡',    // Identical to
+            241: '±',    // Plus minus
+            242: '≥',    // Greater than or equal
+            243: '≤',    // Less than or equal
+            244: '⌠',    // Top integral
+            245: '⌡',    // Bottom integral
+            246: '÷',    // Division sign
+            247: '≈',    // Approximately equal
+            248: '°',    // Degree sign
+            249: '∙',    // Bullet operator
+            250: '·',    // Middle dot
+            251: '√',    // Square root
+            252: 'ⁿ',    // Superscript n
+            253: '²',    // Superscript 2
+            254: '■',    // Black square
+            255: ' '     // Non-breaking space
+        };
+
+        function getLCDChar(charCode) {
+            // For printable ASCII (32-126), use the character directly
+            if (charCode >= 32 && charCode <= 126) {
+                return String.fromCharCode(charCode);
+            }
+            // For special mappings, use the CP437 map
+            return cp437Map[charCode] || '?';
+        }
+
+        function generateTable() {
+            const tbody = document.getElementById('tableBody');
+            const rows = 64; // 256 / 4 columns = 64 rows
+            
+            for (let row = 0; row < rows; row++) {
+                const tr = document.createElement('tr');
+                
+                for (let col = 0; col < 4; col++) {
+                    const charCode = row + (col * 64);
+                    
+                    // Integer cell
+                    const tdInt = document.createElement('td');
+                    tdInt.className = 'int-col';
+                    tdInt.textContent = charCode;
+                    tr.appendChild(tdInt);
+                    
+                    // Character cell
+                    const tdChar = document.createElement('td');
+                    tdChar.className = 'char-col font-monospace';
+                    
+                    // Get the actual character
+                    const char = String.fromCharCode(charCode);
+                    
+                    // For control characters and special cases, show the actual character
+                    // but style it differently if it's a control character
+                    if (charCode < 32 || charCode === 127) {
+                        tdChar.innerHTML = `"<span class="control-char">${char}</span>"`;
+                    } else {
+                        tdChar.textContent = `"${char}"`;
+                    }
+                    
+                    tr.appendChild(tdChar);
+                    
+                    // LCD cell
+                    const tdLCD = document.createElement('td');
+                    tdLCD.className = 'lcd-col';
+                    const lcdChar = getLCDChar(charCode);
+                    tdLCD.textContent = `"${lcdChar}"`;
+                    tr.appendChild(tdLCD);
+                }
+                
+                tbody.appendChild(tr);
+            }
+        }
+        
+        function changeFont() {
+            const fontSelector = document.getElementById('fontSelector');
+            const selectedFont = fontSelector.value;
+            const charCells = document.querySelectorAll('.char-col');
+            
+            charCells.forEach(cell => {
+                // Remove all font classes
+                cell.classList.remove('font-monospace', 'font-arial', 'font-times', 
+                                     'font-segoe', 'font-noto', 'font-symbola', 
+                                     'font-lucida', 'font-dejavu');
+                // Add the selected font class
+                cell.classList.add(selectedFont);
+            });
+        }
+        
+        // Generate the table when the page loads
+        generateTable();
+    </script>
+</body>
+</html>
